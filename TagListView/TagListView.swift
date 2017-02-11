@@ -276,7 +276,7 @@ open class TagListView: UIView {
     // MARK: - Manage tags
     
     override open var intrinsicContentSize: CGSize {
-        var height = CGFloat(rows) * (tagViewHeight + marginY)
+        var height = CGFloat(rows+1) * (tagViewHeight + marginY)
         if rows > 0 {
             height -= marginY
         }
